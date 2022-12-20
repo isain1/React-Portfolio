@@ -1,14 +1,23 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import './App.css';
 
 export default function Navbar() {
     return (
         <div className="navbar">
             <h1>Isain Ibarra</h1>
-            <ul>
-                <CustomLink to="/">About Me</CustomLink>
-                <CustomLink to="/portfolio">Portfolio</CustomLink>
-                <CustomLink to="/contact">Contact</CustomLink>
-                <CustomLink to="/resume">Resume</CustomLink>
+            <ul className="navlist">
+                <li className="listitem">
+                    <CustomLink to="/" className="navDir">About Me</CustomLink>
+                </li>
+                <li>
+                    <CustomLink to="/portfolio" className="navDir">Portfolio</CustomLink>
+                </li>    
+                <li>
+                    <CustomLink to="/contact" className="navDir">Contact</CustomLink>
+                </li>
+                <li>
+                    <CustomLink to="/resume" className="navDir">Resume</CustomLink>
+                </li>
             </ul>
         </div>
     );

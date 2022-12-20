@@ -1,13 +1,17 @@
 import React from 'react';
 import placeholder from '../placeholder-avatar.png';
+
 export default function About() {
     return (
-        <div>
-            <h3>About me</h3>
-            <img src={placeholder} alt='Placeholder profile avatar'/>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras fermentum odio eu feugiat pretium nibh. Laoreet suspendisse interdum consectetur libero. Vulputate mi sit amet mauris commodo quis imperdiet massa. Non odio euismod lacinia at quis risus sed. Auctor eu augue ut lectus arcu. Neque convallis a cras semper auctor neque vitae tempus. Laoreet sit amet cursus sit. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. At urna condimentum mattis pellentesque. Vitae ultricies leo integer malesuada nunc. Bibendum enim facilisis gravida neque convallis a cras semper. Phasellus egestas tellus rutrum tellus pellentesque. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-            </p>
+        <div className='aboutpage'>
+            <h3 className='abouttitle'>About me</h3>
+            <div  className='aboutme'>
+                <img src={placeholder} className="avatarimage" alt='Placeholder profile avatar'/>
+                <p className='aboutbio'>
+                    Hello, my name is Isain Ibarra. I am an aspiring front end web developer currently enrolled in a full stack web development cooding bootcamo at Michigan State University. Over the Last few months I have worked on multiple projects that heavily incorporate technologies and topics relevant in full stack web development such as HTML, CSS, Javascript (ES5 and ES6), NodeJs, ExpressJs, MySQL, MongoDB, and ReactJs. My goal after completing this bootcamp is to continue refining my skills in front end ttopics in hopes of finding a job as a front end web developer. 
+                </p>
+            </div>
+            
         </div>
     );
 };
